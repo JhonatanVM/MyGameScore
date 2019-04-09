@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MyGameScore.Application\MyGameScore.Application.csproj" />
+    <ProjectReference Include="..\MyGameScore.Data\MyGameScore.Data.csproj" />
+  </ItemGroup>
+
+</Project>

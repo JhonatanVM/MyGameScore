@@ -1,0 +1,22 @@
+<div class="container mx-auto">
+  <form class="mt-3">
+    <div class="card">
+      <div class="card-header h5 bg-light">Lançar Pontos</div>
+      <div class="card-body">
+        <div class="form-group">
+          <label for="date">Data do jogo</label>
+          <input name="date" id="date" type="date" class="form-control" [(ngModel)]="match.date" placeholder="Date"
+            autofocus>
+        </div>
+        <div class="form-group">
+          <label for="score">Quantos pontos voce fez</label>
+          <input name="score" id="score" type="text" class="form-control" [(ngModel)]="match.score" placeholder="Score">
+        </div>
+        <div class="text-center">
+          <button type="button" class="btn btn-primary btn-block" (click)="insertMatch()"
+            [disabled]="!match.date || !match.score">Salvar</button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
