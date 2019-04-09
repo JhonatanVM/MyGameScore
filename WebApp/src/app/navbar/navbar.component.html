@@ -7,9 +7,12 @@
     </button>
     <div class="collapse navbar-collapse" id="collapseExample" [ngbCollapse]="isCollapsed">
       <div class="navbar-nav">
-        <a [routerLink]="['match']" class="nav-item nav-link text-white p-2 hover-bottom">Lançar Pontos</a>
-        <a [routerLink]="['mygames']" class="nav-item nav-link text-white p-2 hover-bottom">Meus Jogos</a>
-        <a [routerLink]="['results']" class="nav-item nav-link text-white p-2 hover-bottom">Minha Analíse</a>
+        <a [routerLink]="['match']" (click)="isCollapsed = !isCollapsed"
+          class="nav-item nav-link text-white p-2 hover-bottom">Lançar Pontos</a>
+        <a [routerLink]="['mygames']" (click)="isCollapsed = !isCollapsed"
+          class="nav-item nav-link text-white p-2 hover-bottom">Meus Jogos</a>
+        <a [routerLink]="['results']" (click)="isCollapsed = !isCollapsed"
+          class="nav-item nav-link text-white p-2 hover-bottom">Minha Analíse</a>
       </div>
     </div>
   </div>

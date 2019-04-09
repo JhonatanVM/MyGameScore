@@ -12,6 +12,7 @@ export class MatchMygamesComponent implements OnInit {
 
   private matches: Match[];
   private state: boolean;
+  private carregando = true;
 
   constructor(
     private myGameScoreService: MyGameScoreService
@@ -25,6 +26,7 @@ export class MatchMygamesComponent implements OnInit {
     this.myGameScoreService.get()
       .subscribe(
         (response) => {
+          this.carregando = false;
           if (response.length !== 0) {
             this.matches = response;
             this.state = true;
@@ -32,6 +34,7 @@ export class MatchMygamesComponent implements OnInit {
         },
         (error: HttpErrorResponse) => {
           console.log(error.message);
+          this.carregando = false;
         });
   }
 

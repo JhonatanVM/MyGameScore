@@ -37,7 +37,7 @@ namespace MyGameScore.Controllers
         public async Task<IActionResult> Get()
         {
             var result = await _matchApplicationService.GetAsync();
-            if (result != null)
+            if (result.Any())
                 return Ok(result);
 
             return NoContent();
