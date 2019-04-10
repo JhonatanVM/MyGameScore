@@ -2,19 +2,19 @@
 
 Aplicativo Web desenvolvido com Angular e REST API, para registrar e obter estatísticas das partidas disputados em uma temporada.
 
-##Configurações do Aplicativo
+## Configurações do Aplicativo
 
-###Banco de Dados
+### Banco de Dados
 
 Execute os dois scripts dentro da pasta Scripts, primeiro o arquivo 'Database.sql' depois 'TableMatch.sql'.
 
-###REST API
+### REST API
 
 Abra o arquivo 'MyGameScore.sln' dentro da pasta MyGameScore.
 Altere a porta utilizada pela API nas propriedades do projeto 'MyGameScore' dentro da pasta 1-Services.
 Altere a connection string presente no arquivo 'appsettings.Development.json' no mesmo projeto, colocando a connection string do banco que você acabou de criar.
 
-###Angular
+### Angular
 
 Abra o editor de texto de sua preferência na pasta WebApp.
 Altere a porta utilizada pelo aplicativo na pasta:
@@ -29,7 +29,7 @@ Baixe as dependências do projeto executando o seguinte comando no terminal:
 npm-i
 ```
 
-###Execute os projetos
+### Execute os projetos
 
 Execute a API selecionando o projeto MyGameScore como o projeto de inicialização.
 
