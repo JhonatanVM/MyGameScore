@@ -1,7 +1,5 @@
 ﻿using MyGameScore.Domain.Entities;
-using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace MyGameScore.Domain.Interfaces.Domain

@@ -2,10 +2,8 @@
 using MyGameScore.Data.Context;
 using MyGameScore.Domain.Entities;
 using MyGameScore.Domain.Interfaces.Repository;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace MyGameScore.Data.Repository
@@ -44,7 +42,7 @@ namespace MyGameScore.Data.Repository
                     AverageScore = allEntities.Average(e => e.Score),
                     HighestScore = allEntities.Max(e => e.Score),
                     LowestScore = allEntities.Min(e => e.Score),
-                    TimesRecordBeated = allEntities.Count(e => e.IsHighestScore == true)
+                    TimesRecordBeated = allEntities.Count(e => e.IsHighestScore)
                 };
                 return results;
             }

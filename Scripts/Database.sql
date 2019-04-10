@@ -1,2 +1,2 @@
-Create Database [MyGameScore]
+CREATE DATABASE [MyGameScore]
 go

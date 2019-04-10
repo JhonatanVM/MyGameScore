@@ -8,7 +8,6 @@ using MyGameScore.Data.Repository;
 using MyGameScore.Domain.Interfaces.Domain;
 using MyGameScore.Domain.Interfaces.Repository;
 using MyGameScore.Domain.Services;
-using System;
 
 namespace MyGameScore.IoC
 {

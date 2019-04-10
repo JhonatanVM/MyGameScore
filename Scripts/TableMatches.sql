@@ -1,7 +1,6 @@
 USE [MyGameScore]
 GO
 
-/****** Object:  Table [dbo].[Matches]    Script Date: 09/04/2019 17:45:05 ******/
 SET ANSI_NULLS ON
 GO
 

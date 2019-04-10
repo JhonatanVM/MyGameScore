@@ -28,8 +28,12 @@ export class MatchFormComponent implements OnInit {
           this.match = new Match();
         },
         (error: HttpErrorResponse) => {
-          alert('Não foi possível inserir.');
-          console.log(error.message);
+          if (error.status === 400) {
+            alert('Dado\(s\) inválido\(s\).');
+            console.log(error.message);
+          } else {
+            alert('Erro interno do servidor.');
+          }
         });
   }
 }

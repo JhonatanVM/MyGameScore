@@ -9,6 +9,7 @@ namespace MyGameScore.Domain.Validations
         public MatchValidation()
         {
             ValidateDate();
+            ValidateScore();
         }
 
         public void ValidateDate()
@@ -16,6 +17,13 @@ namespace MyGameScore.Domain.Validations
             RuleFor(e => e.Date)
                 .LessThanOrEqualTo(DateTime.Now)
                 .WithMessage("Date is invalid!");
+        }
+
+        public void ValidateScore()
+        {
+            RuleFor(e => e.Score)
+                .GreaterThanOrEqualTo(0)
+                .WithMessage("Score is invalid!");
         }
     }
 }

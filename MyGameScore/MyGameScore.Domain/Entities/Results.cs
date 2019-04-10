@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace MyGameScore.Domain.Entities
 {
@@ -19,7 +17,8 @@ namespace MyGameScore.Domain.Entities
         {
         }
 
-        public Results(DateTime startDate, DateTime endDate, int quantityOfGames, int totalScore, double averageScore, int highestScore, int lowestScore, int timesRecordBeated)
+        public Results(DateTime startDate, DateTime endDate, int quantityOfGames, int totalScore, 
+            double averageScore, int highestScore, int lowestScore, int timesRecordBeated)
         {
             StartDate = startDate;
             EndDate = endDate;

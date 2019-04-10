@@ -1,5 +1,5 @@
 <div class="container mx-auto">
-  <div *ngIf="state" class="card">
+  <div *ngIf="matches?.length" class="card">
     <div class="card-header h5 bg-light">Meus Jogos</div>
     <div class="card-body">
       <div class="table-responsive">
@@ -29,8 +29,12 @@
     <p class="text-center text-muted mt-4 h5"><i class="fas fa-spinner"></i> Carregando...</p>
   </div>
 
-  <div *ngIf="!state && !matches?.length && !carregando" class="text-center">
-      <i class="far fa-folder-open fa-7x"></i>
+  <div *ngIf="!matches?.length && !carregando && !vazio">
+    <p class="text-center text-muted mt-4 h5">Desculpe, não foi possível carregar seus jogos.</p>
+  </div>
+
+  <div *ngIf="vazio" class="text-center">
+    <i class="far fa-folder-open fa-7x"></i>
     <p class="text-center text-muted mt-4 h5">Nada aqui, adicione novos jogos!</p>
   </div>
 </div>

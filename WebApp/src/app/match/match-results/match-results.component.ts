@@ -28,8 +28,9 @@ export class MatchResultsComponent implements OnInit {
       this.carregando = false;
       if (response == null) {
         this.vazio = true;
+      } else {
+        this.results = response;
       }
-      this.results = response;
     },
     (error: HttpErrorResponse) => {
       this.carregando = false;

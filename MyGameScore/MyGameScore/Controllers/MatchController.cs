@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
+﻿using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using MyGameScore.Application.Interfaces;
 using MyGameScore.Application.Services.AppMatch.Input;
@@ -24,11 +20,7 @@ namespace MyGameScore.Controllers
         [ProducesResponseType(204)]
         public async Task<IActionResult> GetResults()
         {
-            var result = await _matchApplicationService.GetResultsAsync();
-            if (result != null)
-                return Ok(result);
-
-            return NoContent();
+            return Ok(await _matchApplicationService.GetResultsAsync());
         }
 
         [HttpGet]
@@ -36,11 +28,7 @@ namespace MyGameScore.Controllers
         [ProducesResponseType(204)]
         public async Task<IActionResult> Get()
         {
-            var result = await _matchApplicationService.GetAsync();
-            if (result.Any())
-                return Ok(result);
-
-            return NoContent();
+            return Ok(await _matchApplicationService.GetAsync());
         }
 
         [HttpPost]

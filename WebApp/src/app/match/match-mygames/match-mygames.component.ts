@@ -11,7 +11,7 @@ import { HttpErrorResponse } from '@angular/common/http';
 export class MatchMygamesComponent implements OnInit {
 
   private matches: Match[];
-  private state: boolean;
+  private vazio = false;
   private carregando = true;
 
   constructor(
@@ -27,9 +27,10 @@ export class MatchMygamesComponent implements OnInit {
       .subscribe(
         (response) => {
           this.carregando = false;
-          if (response.length !== 0) {
+          if (response.length === 0) {
+            this.vazio = true;
+          } else {
             this.matches = response;
-            this.state = true;
           }
         },
         (error: HttpErrorResponse) => {
@@ -44,10 +45,11 @@ export class MatchMygamesComponent implements OnInit {
         () => {
           this.atualizaLista(match);
           if (this.matches.length === 0) {
-            this.state = false;
+            this.vazio = true;
           }
         },
         (error: HttpErrorResponse) => {
+          alert('Não foi possível deletar.');
           console.log(error.message);
         });
   }
