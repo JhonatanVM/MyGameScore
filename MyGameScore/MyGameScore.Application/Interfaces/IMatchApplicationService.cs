@@ -11,7 +11,7 @@ namespace MyGameScore.Application.Interfaces
         Task<IEnumerable<Match>> GetAsync();
         Task<Results> GetResultsAsync();
         Task<Match> GetByIdAsync(int id);
-        Task<MatchViewModel> InsertAsync(MatchInput mach);
+        Task<MatchViewModel> InsertAsync(MatchInput match);
         Task<bool> DeleteAsync(int id);
     }
 }

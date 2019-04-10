@@ -44,3 +44,4 @@ C:\Users\Kuuhaku\source\repos\MyGameScore\MyGameScore\MyGameScore\obj\Debug\netc
 C:\Users\Kuuhaku\source\repos\MyGameScore\MyGameScore\MyGameScore\obj\Debug\netcoreapp2.2\MyGameScore.csproj.CopyComplete
 C:\Users\Kuuhaku\source\repos\MyGameScore\MyGameScore\MyGameScore\obj\Debug\netcoreapp2.2\MyGameScore.dll
 C:\Users\Kuuhaku\source\repos\MyGameScore\MyGameScore\MyGameScore\obj\Debug\netcoreapp2.2\MyGameScore.pdb
+C:\Users\Kuuhaku\source\repos\MyGameScore\MyGameScore\MyGameScore\bin\Debug\netcoreapp2.2\MyGameScore.xml

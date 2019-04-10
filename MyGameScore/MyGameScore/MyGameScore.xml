@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MyGameScore</name>
+    </assembly>
+    <members>
+        <member name="T:MyGameScore.Controllers.MatchController">
+            <summary>
+            Controller <see cref="T:MyGameScore.Controllers.MatchController"/>.
+            </summary>
+        </member>
+        <member name="M:MyGameScore.Controllers.MatchController.#ctor(MyGameScore.Application.Interfaces.IMatchApplicationService)">
+            <summary>
+            Constructor of the Controller <see cref="T:MyGameScore.Controllers.MatchController"/>.
+            </summary>
+            <param name="matchApplicationService"></param>
+        </member>
+        <member name="M:MyGameScore.Controllers.MatchController.GetResults">
+            <summary>
+            Method that gets an analysis of the Matches saved.
+            </summary>
+            <returns>Returns an object with the results of the analysis.</returns>
+        </member>
+        <member name="M:MyGameScore.Controllers.MatchController.Get">
+            <summary>
+            Method that gets all Matches saved.
+            </summary>
+            <returns>Returns a List of Matches.</returns>
+        </member>
+        <member name="M:MyGameScore.Controllers.MatchController.Post(MyGameScore.Application.Services.AppMatch.Input.MatchInput)">
+            <summary>
+            Method that insert a new match.
+            </summary>
+            <param name="match">Object that is going to be inserted.</param>
+            <returns>Returns the object inserted.</returns>
+        </member>
+        <member name="M:MyGameScore.Controllers.MatchController.Delete(System.Int32)">
+            <summary>
+            Method that deletes a Match
+            </summary>
+            <param name="id">The Id of the Match that is going to be deleted.</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

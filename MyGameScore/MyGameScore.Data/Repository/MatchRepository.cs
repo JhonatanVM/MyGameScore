@@ -24,7 +24,7 @@ namespace MyGameScore.Data.Repository
 
         public async Task<IEnumerable<Match>> GetAsync()
         {
-            return await _context.Matches.ToListAsync();;
+            return await _context.Matches.ToListAsync();
         }
 
         public async Task<Results> GetResultsAsync()

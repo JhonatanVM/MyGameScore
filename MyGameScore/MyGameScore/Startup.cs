@@ -49,7 +49,7 @@ namespace MyGameScore
                         Contact = new Contact
                         {
                             Name = "Jhonatan Vinicius Martins dos Santos",
-                            Url = "https://gitlab.com/JhonatanVM"
+                            Url = "https://github.com/JhonatanVM"
                         }
                     });
             });
