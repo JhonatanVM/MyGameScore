@@ -4792,7 +4792,7 @@
       },
       "MyGameScore.Application/1.0.0": {
         "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
+        "framework": ".NETCoreApp,Version=v2.2",
         "dependencies": {
           "MyGameScore.Domain": "1.0.0"
         },
@@ -4805,7 +4805,7 @@
       },
       "MyGameScore.Data/1.0.0": {
         "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
+        "framework": ".NETCoreApp,Version=v2.2",
         "dependencies": {
           "Microsoft.EntityFrameworkCore.SqlServer": "2.2.3",
           "MyGameScore.Domain": "1.0.0"
@@ -4819,7 +4819,7 @@
       },
       "MyGameScore.Domain/1.0.0": {
         "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
+        "framework": ".NETCoreApp,Version=v2.2",
         "dependencies": {
           "FluentValidation": "8.2.2"
         },
@@ -4832,7 +4832,7 @@
       },
       "MyGameScore.IoC/1.0.0": {
         "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
+        "framework": ".NETCoreApp,Version=v2.2",
         "dependencies": {
           "MyGameScore.Application": "1.0.0",
           "MyGameScore.Data": "1.0.0"
@@ -13164,11 +13164,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Kuuhaku\\source\\repos\\MyGameScore\\MyGameScore\\MyGameScore\\MyGameScore.csproj",
+      "projectUniqueName": "C:\\Users\\Kuuhaku\\source\\repos\\CSharp\\MyGameScore\\MyGameScore\\MyGameScore\\MyGameScore.csproj",
       "projectName": "MyGameScore",
-      "projectPath": "C:\\Users\\Kuuhaku\\source\\repos\\MyGameScore\\MyGameScore\\MyGameScore\\MyGameScore.csproj",
+      "projectPath": "C:\\Users\\Kuuhaku\\source\\repos\\CSharp\\MyGameScore\\MyGameScore\\MyGameScore\\MyGameScore.csproj",
       "packagesPath": "C:\\Users\\Kuuhaku\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Kuuhaku\\source\\repos\\MyGameScore\\MyGameScore\\MyGameScore\\obj\\",
+      "outputPath": "C:\\Users\\Kuuhaku\\source\\repos\\CSharp\\MyGameScore\\MyGameScore\\MyGameScore\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -13187,11 +13187,11 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Users\\Kuuhaku\\source\\repos\\MyGameScore\\MyGameScore\\MyGameScore.Application\\MyGameScore.Application.csproj": {
-              "projectPath": "C:\\Users\\Kuuhaku\\source\\repos\\MyGameScore\\MyGameScore\\MyGameScore.Application\\MyGameScore.Application.csproj"
+            "C:\\Users\\Kuuhaku\\source\\repos\\CSharp\\MyGameScore\\MyGameScore\\MyGameScore.Application\\MyGameScore.Application.csproj": {
+              "projectPath": "C:\\Users\\Kuuhaku\\source\\repos\\CSharp\\MyGameScore\\MyGameScore\\MyGameScore.Application\\MyGameScore.Application.csproj"
             },
-            "C:\\Users\\Kuuhaku\\source\\repos\\MyGameScore\\MyGameScore\\MyGameScore.IoC\\MyGameScore.IoC.csproj": {
-              "projectPath": "C:\\Users\\Kuuhaku\\source\\repos\\MyGameScore\\MyGameScore\\MyGameScore.IoC\\MyGameScore.IoC.csproj"
+            "C:\\Users\\Kuuhaku\\source\\repos\\CSharp\\MyGameScore\\MyGameScore\\MyGameScore.IoC\\MyGameScore.IoC.csproj": {
+              "projectPath": "C:\\Users\\Kuuhaku\\source\\repos\\CSharp\\MyGameScore\\MyGameScore\\MyGameScore.IoC\\MyGameScore.IoC.csproj"
             }
           }
         }
