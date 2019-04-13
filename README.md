@@ -29,7 +29,7 @@ WebApp\src\environments\environment.ts
 * Baixe as dependências do projeto executando o seguinte comando no terminal:
 
 ```
-npm-i
+npm i
 ```
 
 ### Execute os projetos
